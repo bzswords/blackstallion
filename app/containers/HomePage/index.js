@@ -10,15 +10,22 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+
+import Page from 'components/styled/Page';
+import Header from 'components/HomePage/Header/Header';
+import TattooPortfolio from 'components/HomePage/TattooPortfolio';
+import About from 'components/HomePage/About';
+import FeaturedProducts from 'components/HomePage/FeaturedProducts';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <Page>
+        <Header />
+        <TattooPortfolio />
+        <About />
+        <FeaturedProducts />
+      </Page>
     );
   }
 }

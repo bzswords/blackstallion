@@ -13,18 +13,31 @@ injectGlobal`
   }
 
   body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Abril Fontface', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   #app {
-    background-color: #fafafa;
+    background-color: black;
     min-height: 100%;
     min-width: 100%;
   }
 
   p,
   label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.5em;
+    font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    margin:0;
+  }
+
+  h1, 
+  h2 {
+    position: relative;
+    font-family: 'Abril Fatface', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+    z-index: 1;
+    white-space: nowrap;
   }
 `;
