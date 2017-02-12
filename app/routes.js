@@ -34,6 +34,70 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
+      path: '/booking',
+      name: 'booking',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/Booking'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([component]) => {
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    }, {
+      path: '/travel',
+      name: 'travel',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/Travel'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([component]) => {
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    }, {
+      path: '/faq',
+      name: 'faq',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/Faq'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([component]) => {
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    }, {
+      path: '/contact',
+      name: 'contact',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/Contact'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([component]) => {
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
