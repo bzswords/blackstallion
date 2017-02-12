@@ -1,12 +1,15 @@
 import React from 'react';
 
 import PageSection from 'components/shared/PageSection';
+import PageSectionHeader from 'components/styled/PageSectionHeader';
 import StrikethroughHeading from 'components/shared/StrikethroughHeading';
 
 function TattooPortfolio() {
   return (
     <PageSection background="black">
-      <StrikethroughHeading text="Tattoo Portfolio"></StrikethroughHeading>
+      <PageSectionHeader>
+        <StrikethroughHeading text="Tattoo Portfolio"></StrikethroughHeading>
+      </PageSectionHeader>
     </PageSection>  
   );
 }
