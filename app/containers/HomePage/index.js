@@ -11,7 +11,7 @@
 
 import React from 'react';
 
-import Page from 'components/styled/Page';
+import Page from 'components/shared/Page';
 import Header from 'components/HomePage/Header/Header';
 import TattooPortfolio from 'components/HomePage/TattooPortfolio';
 import About from 'components/HomePage/About';

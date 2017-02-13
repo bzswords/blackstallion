@@ -30,7 +30,8 @@ injectGlobal`
   }
 
   h1, 
-  h2 {
+  h2,
+  h3 {
     position: relative;
     font-family: 'Abril Fatface', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-align: center;

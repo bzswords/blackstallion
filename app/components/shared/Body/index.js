@@ -4,7 +4,8 @@ const Body = styled.div`
   font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
   color: white;
-  margin: 0 0.8em 0 0.8em;
+  margin: auto;
+  max-width: 30em;
 `;
 
 export default Body;

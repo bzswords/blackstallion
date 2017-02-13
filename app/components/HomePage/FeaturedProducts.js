@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PageSection from 'components/shared/PageSection';
-import PageSectionHeader from 'components/styled/PageSectionHeader';
+import PageSectionHeader from 'components/shared/PageSectionHeader';
 import StrikethroughHeading from 'components/shared/StrikethroughHeading';
 
 function FeaturedProducts() {

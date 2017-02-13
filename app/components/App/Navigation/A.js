@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import NormalA from 'components/styled/A';
+import NormalA from 'components/shared/A';
 
 const A = styled(NormalA)`
   font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;

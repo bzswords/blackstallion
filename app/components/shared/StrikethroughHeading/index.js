@@ -8,7 +8,7 @@ import React, { PropTypes } from 'react';
 // import styled from 'styled-components';
 
 import Wrapper from './Wrapper';
-import H2 from 'components/styled/H2';
+import H2 from 'components/shared/H2';
 import Strikethrough from './Strikethrough';
 
 
