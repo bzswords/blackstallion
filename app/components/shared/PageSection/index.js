@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components'
 
 const chunk = css`
-  background: url(${props => props.background }) no-repeat fixed top;
-  padding: 0 0.5em 0 0.5em;
+  background-color: ${props => props.background ? props.background : 'black' };
+  padding: 0 0.5em 2em 0.5em;
 `
 
 const PageSection = styled.section`

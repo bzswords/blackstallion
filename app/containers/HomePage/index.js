@@ -12,7 +12,7 @@
 import React from 'react';
 
 import Page from 'components/shared/Page';
-import Header from 'components/HomePage/Header/Header';
+import Header from 'components/HomePage/Header';
 import TattooPortfolio from 'components/HomePage/TattooPortfolio';
 import About from 'components/HomePage/About';
 import FeaturedProducts from 'components/HomePage/FeaturedProducts';

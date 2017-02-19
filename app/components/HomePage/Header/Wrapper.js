@@ -1,11 +1,7 @@
-import styled from 'styled-components';
-
-import Background from 'assets/images/background.jpg';
+import styled, { css } from 'styled-components'
 
 const Wrapper = styled.div`
-  position: relative;
-  width: 85%;
-  margin: auto;
-`;
+  padding-top: 77px;
+` 
 
 export default Wrapper;

@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-const Page = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
 `;
 
-export default Page;
+export default Wrapper;
