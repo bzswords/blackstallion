@@ -15,13 +15,13 @@ import BackgroundImage from './images/faq-header-img.jpg';
 const questions = [
   {
     question: 'How much do you charge?',
-    answer: 'Pricing is dependent on many variables (such as size, placement, and subject matter). Certain larger tattoos may be priced using an hourly rate, while others may be priced by design.'
+    answer: 'Pricing is dependent on many variables (such as size, placement, and subject matter). Certain larger tattoos may be priced using an hourly rate, while others may be priced by design.',
   },
   {
     question: 'How far out are you booked?',
-    answer: 'Very, very far.'
-  }
-]
+    answer: 'Very, very far.',
+  },
+];
 
 export default class Faq extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {

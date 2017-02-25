@@ -9,9 +9,9 @@ function Questions({ questions }) {
   return (
     <PageSection background="#1b1b1b">
       <Body>
-        {questions.map((question, idx) => {
-          return <QAEntry key={idx} entry={question} />
-        })}
+        {questions.map((question, idx) =>
+          <QAEntry key={idx} entry={question} />
+        )}
       </Body>
     </PageSection>
   );

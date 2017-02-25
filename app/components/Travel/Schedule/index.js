@@ -12,9 +12,9 @@ function Schedule({ entries }) {
       <PageSectionHeader>
         <StrikethroughHeading text="Upcoming Dates"></StrikethroughHeading>
       </PageSectionHeader>
-      {entries.map((entry, idx) => {
-        return <TravelEntry key={idx} entry={entry} />
-      })}
+      {entries.map((entry, idx) =>
+        <TravelEntry key={idx} entry={entry} />
+      )}
     </PageSection>
   );
 }
