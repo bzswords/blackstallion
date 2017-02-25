@@ -1,15 +1,15 @@
 import React from 'react';
 
-import H1 from 'components/shared/H1';
 import BackgroundImageSection from 'components/shared/BackgroundImageSection';
 
-import BackgroundImage from './images/background-header.jpg'
+import H1 from './H1';
+import BackgroundImage from './images/contact-header-img.jpg';
 
 function Header() {
   return (
     <BackgroundImageSection background={BackgroundImage}>
-      <H1>Book An Appointment</H1>
-    </BackgroundImageSection>  
+      <H1 text="Contact" />
+    </BackgroundImageSection>
   );
 }
 

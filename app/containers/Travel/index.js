@@ -4,37 +4,34 @@
  *
  */
 
-import React, { PropTypes } from 'react';
-import { connect } from 'react-redux';
-import Helmet from 'react-helmet';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import React from 'react';
 
-export class Travel extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+import Page from 'components/shared/Page';
+import PageHeader from 'components/shared/PageHeader';
+import Schedule from 'components/Travel/Schedule';
+
+import BackgroundImage from './images/travel-header-img.jpg';
+
+const entries = [
+  {
+    dateString: 'December 10-13', 
+    placeName: 'Seven Swords Tattoo', 
+    address: 'Philadelphia, PA' 
+  },
+  {
+    dateString: 'December 21-24', 
+    placeName: 'Coast To Coast Tattoo', 
+    address: 'Charlotte, NC' 
+  }
+]
+
+export default class Travel extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
-        <Helmet
-          title="Travel"
-          meta={[
-            { name: 'description', content: 'Description of Travel' },
-          ]}
-        />
-        <FormattedMessage {...messages.header} />
-      </div>
+      <Page>
+        <PageHeader title="Travel" backgroundImage={BackgroundImage} />
+        <Schedule entries={entries} />
+      </Page>
     );
   }
 }
-
-Travel.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-};
-
-
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-  };
-}
-
-export default connect(null, mapDispatchToProps)(Travel);

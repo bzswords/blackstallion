@@ -6,7 +6,7 @@ import Img from './Img';
 function FeaturedProduct({ img, alt, name, price }) {
   return (
     <Wrapper>
-      <Img src={img} alt={alt}/>
+      <Img src={img} alt={alt} />
       <p>{name}</p>
       <p>{price}</p>
     </Wrapper>

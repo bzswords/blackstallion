@@ -4,37 +4,32 @@
  *
  */
 
-import React, { PropTypes } from 'react';
-import { connect } from 'react-redux';
-import Helmet from 'react-helmet';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import React from 'react';
 
-export class Faq extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+import Page from 'components/shared/Page';
+import PageHeader from 'components/shared/PageHeader';
+import Questions from 'components/Faq/Questions';
+
+import BackgroundImage from './images/faq-header-img.jpg';
+
+const questions = [
+  {
+    question: 'How much do you charge?',
+    answer: 'Pricing is dependent on many variables (such as size, placement, and subject matter). Certain larger tattoos may be priced using an hourly rate, while others may be priced by design.'
+  },
+  {
+    question: 'How far out are you booked?',
+    answer: 'Very, very far.'
+  }
+]
+
+export default class Faq extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
-        <Helmet
-          title="Faq"
-          meta={[
-            { name: 'description', content: 'Description of Faq' },
-          ]}
-        />
-        <FormattedMessage {...messages.header} />
-      </div>
+      <Page>
+        <PageHeader title="FAQ" backgroundImage={BackgroundImage} />
+        <Questions questions={questions} />
+      </Page>
     );
   }
 }
-
-Faq.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-};
-
-
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-  };
-}
-
-export default connect(null, mapDispatchToProps)(Faq);

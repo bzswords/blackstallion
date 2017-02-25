@@ -1,24 +1,23 @@
 import React from 'react';
 import Grid from 'grid-styled';
 
-import Wrapper from './Wrapper';
-import FeaturedProduct from './FeaturedProduct';
+import FeaturedPlaceholder from 'components/HomePage/images/featured-placeholder.png';
 
-import FeaturedPlaceholder from 'components/HomePage/images/featured-placeholder.png'
+import FeaturedProduct from './FeaturedProduct';
 
 function FeaturedProductGrid() {
   return (
-    <Wrapper>
-      <Grid sm={1/3}>
+    <div>
+      <Grid sm={1 / 3}>
         <FeaturedProduct img={FeaturedPlaceholder} alt="placeholder" name="Placeholder" price="$19.99" />
       </Grid>
-      <Grid sm={1/3}>
+      <Grid sm={1 / 3}>
         <FeaturedProduct img={FeaturedPlaceholder} alt="placeholder" name="Placeholder" price="$19.99" />
       </Grid>
-      <Grid sm={1/3}>
+      <Grid sm={1 / 3}>
         <FeaturedProduct img={FeaturedPlaceholder} alt="placeholder" name="Placeholder" price="$19.99" />
       </Grid>
-    </Wrapper>  
+    </div>
   );
 }
 

@@ -4,37 +4,17 @@
  *
  */
 
-import React, { PropTypes } from 'react';
-import { connect } from 'react-redux';
-import Helmet from 'react-helmet';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import React from 'react';
 
-export class Contact extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+import Page from 'components/shared/Page';
+import Header from 'components/Contact/Header';
+
+export default class Contact extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
-        <Helmet
-          title="Contact"
-          meta={[
-            { name: 'description', content: 'Description of Contact' },
-          ]}
-        />
-        <FormattedMessage {...messages.header} />
-      </div>
+      <Page>
+        <Header />
+      </Page>
     );
   }
 }
-
-Contact.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-};
-
-
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-  };
-}
-
-export default connect(null, mapDispatchToProps)(Contact);

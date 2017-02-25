@@ -1,18 +1,19 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+
+import PageSectionHeader from 'components/shared/PageSectionHeader';
+import H2 from 'components/shared/H2';
+import Body from 'components/shared/Body';
+
 import messages from './messages';
 
 import Wrapper from './Wrapper';
-import PageSectionHeader from 'components/shared/PageSectionHeader';
-import H2 from 'components/shared/H2';
 import H3 from './H3';
-import Body from 'components/shared/Body';
 import SponsorLogos from './SponsorLogos';
 
 function About() {
   return (
     <Wrapper>
-
       <PageSectionHeader>
         <H2>About Johannes</H2>
       </PageSectionHeader>
@@ -27,7 +28,6 @@ function About() {
 
       <H3>Sponsors</H3>
       <SponsorLogos />
-      
     </Wrapper>
   );
 }
