@@ -12,19 +12,34 @@
  */
 
 import React from 'react';
-import Navigation from 'components/App/Navigation';
+import Header from 'components/App/Header';
 import Footer from 'components/App/Footer';
+import NavigationMenu from 'components/App/NavigationMenu';
 
-export default class App extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class App extends React.Component {
 
   static propTypes = {
     children: React.PropTypes.node,
   };
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      showMenu: false,
+    };
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  toggleMenu() {
+    const current = this.state.showMenu;
+    this.setState({ showMenu: !current });
+  }
+
   render() {
     return (
       <div>
-        <Navigation />
+        <Header toggleMenu={this.toggleMenu} />
+        <NavigationMenu show={this.state.showMenu} />
         {React.Children.toArray(this.props.children)}
         <Footer />
       </div>

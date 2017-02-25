@@ -25,8 +25,4 @@ function SocialMediaLinks() {
   );
 }
 
-SocialMediaLinks.propTypes = {
-
-};
-
 export default SocialMediaLinks;
