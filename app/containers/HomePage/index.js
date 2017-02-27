@@ -17,12 +17,21 @@ import TattooPortfolio from 'components/HomePage/TattooPortfolio';
 import About from 'components/HomePage/About';
 import FeaturedProducts from 'components/HomePage/FeaturedProducts';
 
-export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class HomePage extends React.PureComponent {
   render() {
+    const images = [
+      {path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg'},
+      {path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg'},
+      {path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg'},
+      {path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg'},
+      {path: 'https://s-media-cache-ak0.pinimg.com/736x/91/59/08/915908a0c53bcc46efdea0e94a18bf35.jpg'},
+      {path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg'},
+      {path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg'}
+    ];
     return (
       <Page>
         <Header />
-        <TattooPortfolio />
+        <TattooPortfolio images={images}/>
         <About />
         <FeaturedProducts />
       </Page>

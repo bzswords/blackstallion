@@ -38,7 +38,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Header toggleMenu={this.toggleMenu} />
+        <Header toggleMenu={this.toggleMenu} menuOpen={this.state.showMenu} />
         <NavigationMenu show={this.state.showMenu} />
         {React.Children.toArray(this.props.children)}
         <Footer />
