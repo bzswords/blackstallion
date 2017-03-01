@@ -30,6 +30,14 @@ injectGlobal`
     margin:0;
   }
 
+  input[type=text] {
+    font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  input[type=submit] {
+    font-family: 'Abril Fatface', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
   h1, 
   h2,
   h3 {

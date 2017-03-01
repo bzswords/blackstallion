@@ -10,7 +10,7 @@ import Page from 'components/shared/Page';
 import PageHeader from 'components/shared/PageHeader';
 import Schedule from 'components/Travel/Schedule';
 
-import BackgroundImage from './images/travel-header-img.jpg';
+import BackgroundImage from './images/mobile-travel-header-img.jpg';
 
 const entries = [
   {

@@ -9,7 +9,7 @@ const Wrapper = styled.footer`
   width: 100%;
   padding: 1em 0;
   background-color: #000;
-  z-index: 100;
+  z-index: 50;
 
   p {
     text-align: center;

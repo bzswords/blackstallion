@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   img {
     position: absolute;
     top: 50%;
+    width: 80%;
     margin: 0 0.2em;
   } 
 `;
@@ -20,19 +21,19 @@ class Arrow extends React.PureComponent {
   }
 
   activateImage() {
-    const newIndex = this.props.currentIndex + this.props.stepValue
-    this.props.showImage(newIndex)
+    const newIndex = this.props.currentIndex + this.props.stepValue;
+    this.props.showImage(newIndex);
   }
 
   render() {
     return (
       <Wrapper onClick={this.activateImage}>
-        <img src={this.props.image} />
+        <img src={this.props.image} alt="Placeholder" />
       </Wrapper>
     );
   }
 
-} 
+}
 
 Arrow.propTypes = {
   image: PropTypes.string.isRequired,

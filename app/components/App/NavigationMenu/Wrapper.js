@@ -10,7 +10,7 @@ const Wrapper = styled.nav`
   z-index: ${(props) => props.show ? 51 : 49};
 
   ul {
-    display: flex;
+    display: ${(props) => props.show ? 'flex' : 'none'};
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -28,6 +28,10 @@ const Wrapper = styled.nav`
         text-decoration: none;
         letter-spacing: 0.1em;
       }
+    }
+
+    li:first-child {
+      padding-top: 78px;
     }
   }
 

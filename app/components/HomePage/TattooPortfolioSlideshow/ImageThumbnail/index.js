@@ -1,8 +1,6 @@
 import React, { PropTypes } from 'react';
-import styled from 'styled-components';
 
 import Wrapper from './Wrapper';
-
 
 class ImageThumbnail extends React.PureComponent {
 
@@ -12,7 +10,7 @@ class ImageThumbnail extends React.PureComponent {
   }
 
   activateImage() {
-    this.props.showImage(this.props.position)
+    this.props.showImage(this.props.position);
   }
 
   render() {

@@ -12,7 +12,7 @@
  */
 
 import React from 'react';
-import Header from 'components/App/Header';
+import MobileHeader from 'components/App/MobileHeader';
 import Footer from 'components/App/Footer';
 import NavigationMenu from 'components/App/NavigationMenu';
 
@@ -38,7 +38,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Header toggleMenu={this.toggleMenu} menuOpen={this.state.showMenu} />
+        <MobileHeader toggleMenu={this.toggleMenu} menuOpen={this.state.showMenu} />
         <NavigationMenu show={this.state.showMenu} />
         {React.Children.toArray(this.props.children)}
         <Footer />

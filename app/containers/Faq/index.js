@@ -10,7 +10,7 @@ import Page from 'components/shared/Page';
 import PageHeader from 'components/shared/PageHeader';
 import Questions from 'components/Faq/Questions';
 
-import BackgroundImage from './images/faq-header-img.jpg';
+import BackgroundImage from './images/mobile-faq-header-img.jpg';
 
 const questions = [
   {

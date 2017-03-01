@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   }
 `;
 
-class TattooPortfolioSlideshow extends React.Component { 
+class TattooPortfolioSlideshow extends React.Component {
 
   constructor(props) {
     super(props);
@@ -29,30 +29,33 @@ class TattooPortfolioSlideshow extends React.Component {
   }
 
   showImage(n) {
-    const numOfImages = this.props.images.length
-    if (n < 0) {
-      n = numOfImages - 1;
-    } else if (n >= numOfImages) {
-      n = 0;
-    }
-    this.setState({ current: n });
+    const numOfImages = this.props.images.length;
+    const newIndex = ((index) => {
+      if (index < 0) {
+        return numOfImages - 1;
+      } else if (n >= numOfImages) {
+        return 0;
+      }
+      return index;
+    })(n);
+    this.setState({ current: newIndex });
   }
 
   render() {
     return (
       <Wrapper>
         <Grid sm={2 / 3}>
-          <Showcase 
-            showImage={this.showImage} 
-            image={this.props.images[this.state.current]} 
-            current={this.state.current} 
+          <Showcase
+            showImage={this.showImage}
+            image={this.props.images[this.state.current]}
+            current={this.state.current}
           />
         </Grid>
         <Grid sm={1 / 3}>
-          <ImageSelector 
-            showImage={this.showImage} 
-            images={this.props.images} 
-            current={this.state.current} 
+          <ImageSelector
+            showImage={this.showImage}
+            images={this.props.images}
+            current={this.state.current}
           />
         </Grid>
       </Wrapper>

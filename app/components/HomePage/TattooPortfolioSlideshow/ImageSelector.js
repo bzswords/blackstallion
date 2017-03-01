@@ -19,11 +19,11 @@ function ImageSelector({ showImage, images, current }) {
   return (
     <Wrapper>
       {images.map((image, idx) =>
-        <ImageThumbnail 
+        <ImageThumbnail
           key={idx}
-          showImage={showImage} 
-          image={image} 
-          selected={current === idx} 
+          showImage={showImage}
+          image={image}
+          selected={current === idx}
           position={idx}
         />
       )};

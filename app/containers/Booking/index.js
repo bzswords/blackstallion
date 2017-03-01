@@ -11,7 +11,7 @@ import PageHeader from 'components/shared/PageHeader';
 import Policy from 'components/Booking/Policy';
 import BookingForm from 'components/Booking/BookingForm';
 
-import BackgroundImage from './images/booking-header-img.jpg';
+import BackgroundImage from './images/mobile-booking-header-img.jpg';
 
 export default class Booking extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {

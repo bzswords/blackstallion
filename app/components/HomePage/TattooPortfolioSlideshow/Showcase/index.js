@@ -18,16 +18,16 @@ const Wrapper = styled.div`
 function Showcase({ showImage, image, current }) {
   return (
     <Wrapper>
-      <Arrow 
-        image={LeftArrow} 
-        stepValue={-1} 
+      <Arrow
+        image={LeftArrow}
+        stepValue={-1}
         currentIndex={current}
         showImage={showImage}
       />
-      <span><img src={image.path} /></span>
-      <Arrow 
-        image={RightArrow} 
-        stepValue={1} 
+      <span><img src={image.path} alt="placeholder" /></span>
+      <Arrow
+        image={RightArrow}
+        stepValue={1}
         currentIndex={current}
         showImage={showImage}
       />

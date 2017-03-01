@@ -13,7 +13,7 @@ function TattooPortfolio({ images }) {
         <StrikethroughHeading text="Tattoo Portfolio"></StrikethroughHeading>
       </PageSectionHeader>
       <TattooPortfolioSlideshow images={images} />
-    </PageSection>  
+    </PageSection>
   );
 }
 
