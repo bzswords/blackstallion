@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Form from './Form';
-
 import StrikethroughHeading from 'components/shared/StrikethroughHeading';
 import PageSection from 'components/shared/PageSection';
 import PageSectionHeader from 'components/shared/PageSectionHeader';
+
+import Form from './Form';
 
 function BookingForm() {
   return (

@@ -5,7 +5,6 @@ import Background from './images/mobile-background.jpg';
 
 import Img from './Img';
 import Logo from './Logo';
-import Wrapper from './Wrapper';
 import Foreground from './images/Desktop-Homepage-Foreground.png';
 
 function Header() {

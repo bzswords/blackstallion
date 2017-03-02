@@ -27,6 +27,6 @@ const Wrapper = styled.form`
     line-height: 2em;
     margin-top: 1em;
   }
-`
+`;
 
 export default Wrapper;

@@ -5,12 +5,21 @@
 */
 
 import React, { PropTypes } from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
-import Wrapper from './Wrapper';
 import H2 from 'components/shared/H2';
 import Strikethrough from './Strikethrough';
 
+const Wrapper = styled.div`
+  position: relative;
+  width: 85%;
+  margin: auto;
+  max-width: 20em;
+
+  @media (min-width: 1050px) {
+    max-width: 30em;
+  }
+`;
 
 function StrikethroughHeading({ text }) {
   return (

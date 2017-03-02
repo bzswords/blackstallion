@@ -2,9 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import BackgroundImageSection from 'components/shared/BackgroundImageSection';
-import SocialMediaLinks from 'components/shared/SocialMediaLinks';
 
-import H1 from './H1';
 import MobileBackgroundImage from './images/mobile-contact-header-img.jpg';
 
 const Wrapper = styled.div`
@@ -25,10 +23,11 @@ const Wrapper = styled.div`
 
 function Header() {
   return (
-    <BackgroundImageSection 
-      background={MobileBackgroundImage} 
-      backgroundSize='100%'
-      height='30em'>
+    <BackgroundImageSection
+      background={MobileBackgroundImage}
+      backgroundSize="100%"
+      height="30em"
+    >
       <Wrapper>
         <h1>Contact</h1>
         <h3>Email:</h3>
