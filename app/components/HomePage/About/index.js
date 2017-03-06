@@ -10,24 +10,27 @@ import messages from './messages';
 import Wrapper from './Wrapper';
 import H3 from './H3';
 import SponsorLogos from './SponsorLogos';
+import OpaqueLayer from './OpaqueLayer';
 
 function About() {
   return (
     <Wrapper>
-      <PageSectionHeader>
-        <H2>About Johannes</H2>
-      </PageSectionHeader>
+      <OpaqueLayer>
+        <PageSectionHeader>
+          <H2>About Johannes</H2>
+        </PageSectionHeader>
 
-      <Body>
-        <FormattedMessage {...messages.about1} />
-        <br /><br />
-        <FormattedMessage {...messages.about2} />
-        <br /><br />
-        <FormattedMessage {...messages.about3} />
-      </Body>
+        <Body>
+          <FormattedMessage {...messages.about1} />
+          <br /><br />
+          <FormattedMessage {...messages.about2} />
+          <br /><br />
+          <FormattedMessage {...messages.about3} />
+        </Body>
 
-      <H3>Sponsors</H3>
-      <SponsorLogos />
+        <H3>Sponsors</H3>
+        <SponsorLogos />
+      </OpaqueLayer>
     </Wrapper>
   );
 }

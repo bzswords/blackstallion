@@ -12,7 +12,7 @@ function Footer() {
     <Wrapper>
       <SocialMediaLinks />
       <A href='/'>
-        <img src={Logo} alt="Black Stallion Tattoo" target="_self" height="50" />
+        <img src={Logo} alt="Black Stallion Tattoo" target="_self" />
       </A>
       <Copyright>&copy;Black Stallion Tattoo</Copyright>
     </Wrapper>

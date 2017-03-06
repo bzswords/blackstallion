@@ -1,15 +1,32 @@
 import React, { PropTypes } from 'react';
+import styled from 'styled-components';
 
-function SocialMediaLink({ src, href }) {
-  return (
-    <a href={href} target="_blank" >
-      <img src={src} height="30" />
-    </a>
-  );
+const A = styled.a`
+  width: 2em;
+  &:hover {
+    svg > path {
+      fill: white;
+    }
+  }
+`;
+
+class SocialMediaLink extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.href = props.href;
+  }
+
+  render() {
+    return(
+      <A href={this.href} target="_blank" >
+        {this.props.children}
+      </A>
+    );
+  }
 }
 
 SocialMediaLink.propTypes = {
-  src: PropTypes.string,
   href: PropTypes.string,
 };
 

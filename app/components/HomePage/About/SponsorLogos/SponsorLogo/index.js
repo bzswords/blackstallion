@@ -4,10 +4,10 @@ import A from 'components/shared/A';
 
 import Wrapper from './Wrapper';
 
-function SponsorLogo({ img, alt, height }) {
+function SponsorLogo({ link, img, alt, height }) {
   return (
     <Wrapper>
-      <A href="/">
+      <A href={link} target="_blank">
         <img src={img} alt={alt} target="_self" height={height} />
       </A>
     </Wrapper>
@@ -15,6 +15,7 @@ function SponsorLogo({ img, alt, height }) {
 }
 
 SponsorLogo.propTypes = {
+  link: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   height: PropTypes.number.isRequired,

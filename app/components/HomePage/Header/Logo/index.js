@@ -10,8 +10,12 @@ const Wrapper = styled.div`
   left: 50%;
   bottom: 2em;
 
+  @media (min-width: 769px) {
+    left: 50%;
+  }
+
   @media (min-width: 1050px) {
-    left: 65%;
+    left: 58%;
     bottom: 5em;
   }
 

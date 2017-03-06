@@ -12,6 +12,9 @@ import Showcase from './Showcase';
 import ImageSelector from './ImageSelector';
 
 const Wrapper = styled.div`
+  max-width: 60em;
+  margin: auto;
+
   > div {
     padding: 0;
     margin: 0;

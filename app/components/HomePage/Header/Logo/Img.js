@@ -5,9 +5,13 @@ const Img = styled.img`
   position: relative;
   left: -50%;
 
+  @media (min-width: 769px) {
+    left: -70%;
+    width: 140%;
+  }
+
   @media (min-width: 1050px) {
     left: 0;
-    width: 120%;
   }
 
   @media (min-width: 1400px) {

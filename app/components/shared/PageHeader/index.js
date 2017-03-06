@@ -3,17 +3,22 @@ import React, { PropTypes } from 'react';
 import BackgroundImageSection from './../BackgroundImageSection';
 import H1 from './H1';
 
-function PageHeader({ title, backgroundImage }) {
+const props = {
+  mobileBackground: PropTypes.string.isRequired,
+  desktopBackground: PropTypes.string.isRequired,
+  backgroundSize: PropTypes.string,
+  altText: PropTypes.string,
+  title: PropTypes.string.isRequired,
+}
+
+function PageHeader(props) {
   return (
-    <BackgroundImageSection background={backgroundImage}>
-      <H1 text={title} />
+    <BackgroundImageSection {...props}>
+      <H1 text={props.title} />
     </BackgroundImageSection>
   );
 }
 
-PageHeader.propTypes = {
-  title: PropTypes.string.isRequired,
-  backgroundImage: PropTypes.string.isRequired,
-};
+PageHeader.propTypes = props;
 
 export default PageHeader;

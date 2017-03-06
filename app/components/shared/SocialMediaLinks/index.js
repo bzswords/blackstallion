@@ -9,20 +9,28 @@ import React from 'react';
 import Wrapper from './Wrapper';
 import SocialMediaLink from './SocialMediaLink';
 
-import Tumblr from './Tumblr.svg';
-import Facebook from './Facebook.svg';
-import Twitter from './Twitter.svg';
-import Instagram from './Instagram.svg';
+import Tumblr from './icons/Tumblr';
+import Facebook from './icons/Facebook';
+import Twitter from './icons/Twitter';
+import Instagram from './icons/Instagram';
 
 function SocialMediaLinks() {
   return (
     <Wrapper>
-      <SocialMediaLink src={Tumblr} href="tumblr.com" />
-      <SocialMediaLink src={Facebook} href="facebook.com" />
-      <SocialMediaLink src={Twitter} href="twitter.com" />
-      <SocialMediaLink src={Instagram} href="instagram.com" />
+      <SocialMediaLink href="tumblr.com">
+        <Tumblr />
+      </SocialMediaLink>
+      <SocialMediaLink href="facebook.com">
+        <Facebook />
+      </SocialMediaLink>
+      <SocialMediaLink href="twitter.com">
+        <Twitter />
+      </SocialMediaLink>
+      <SocialMediaLink href="instagram.com">
+        <Instagram />
+      </SocialMediaLink>
     </Wrapper>
   );
-}
+} 
 
 export default SocialMediaLinks;

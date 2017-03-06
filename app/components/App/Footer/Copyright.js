@@ -6,6 +6,13 @@ const Copyright = styled.span`
   justify-content: center;
   color: #BDBEBF;
   text-transform: uppercase;
+
+  @media (min-width: 767px) {
+    display: inline-block;
+    position: absolute;
+    left: 23em;
+    bottom: 1.5em;
+  }
 `;
 
 export default Copyright;

@@ -1,18 +1,27 @@
+import React, { PropTypes } from 'react';
 import styled, { css } from 'styled-components';
 
-const chunk = css`
-  position: relative;
-  background: url(${(props) => props.background}) no-repeat;
-  background-size: ${(props) => props.backgroundSize ? props.backgroundSize : '100%'}
-  margin-top: 78px;
+import Wrapper from './Wrapper';
 
-  @media (min-width: 769px) {
-    margin-top: 0;
-  }
-`;
+const props = {
+  mobileBackground: PropTypes.string.isRequired,
+  desktopBackground: PropTypes.string.isRequired,
+  backgroundSize: PropTypes.string,
+  altText: PropTypes.string,
+}
 
-const BackgroundImageSection = styled.div`
-  ${chunk}
-`;
+function BackgroundImageSection(props) {
+  return (
+    <Wrapper {...props}>
+      <picture>
+        <source media="(max-width: 767px)" srcSet={props.mobileBackground} />
+        <img src={props.desktopBackground} alt={props.altText} />
+      </picture>
+      {props.children}
+    </Wrapper>
+  );
+}
+
+BackgroundImageSection.propTypes = props;
 
 export default BackgroundImageSection;

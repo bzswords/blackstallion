@@ -11,10 +11,19 @@ function SponsorLogos() {
   return (
     <Wrapper>
       <Grid sm={1 / 2}>
-        <SponsorLogo img={KingPinLogo} alt="King Pin Tattoo Supply" height={100} />
+        <SponsorLogo 
+          link="http://kingpintattoosupply.com/" 
+          img={KingPinLogo} 
+          alt="King Pin Tattoo Supply" 
+          height={100} 
+        />
       </Grid>
       <Grid sm={1 / 2}>
-        <SponsorLogo img={TattooFlashCollective} alt="Tatoo Flash Collective" height={70} />
+        <SponsorLogo 
+          link="https://www.tattooflashcollective.com/" 
+          img={TattooFlashCollective} 
+          alt="Tatoo Flash Collective" 
+          height={70} />
       </Grid>
     </Wrapper>
   );

@@ -10,7 +10,8 @@ import Page from 'components/shared/Page';
 import PageHeader from 'components/shared/PageHeader';
 import Questions from 'components/Faq/Questions';
 
-import BackgroundImage from './images/mobile-faq-header-img.jpg';
+import MobileBackground from './images/mobile-faq-header-img.jpg';
+import DesktopBackground from './images/faq-header-img.jpg';
 
 const questions = [
   {
@@ -27,7 +28,12 @@ export default class Faq extends React.PureComponent { // eslint-disable-line re
   render() {
     return (
       <Page>
-        <PageHeader title="FAQ" backgroundImage={BackgroundImage} />
+        <PageHeader 
+          title="FAQ"
+          mobileBackground={MobileBackground}
+          desktopBackground={DesktopBackground}
+          altText="Frequently asked questions about Johannes and tattoos"
+        />
         <Questions questions={questions} />
       </Page>
     );

@@ -2,9 +2,7 @@ import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 
 import Arrow from './Arrow';
-
-import LeftArrow from './images/LeftArrow.svg';
-import RightArrow from './images/RightArrow.svg';
+import ImageContainer from './ImageContainer';
 
 const Wrapper = styled.div`
   display: flex;
@@ -19,14 +17,14 @@ function Showcase({ showImage, image, current }) {
   return (
     <Wrapper>
       <Arrow
-        image={LeftArrow}
+        desktopBackground={image.path}
         stepValue={-1}
         currentIndex={current}
         showImage={showImage}
       />
-      <span><img src={image.path} alt="placeholder" /></span>
+      <ImageContainer image={image.path} />
       <Arrow
-        image={RightArrow}
+        desktopBackground={image.path}
         stepValue={1}
         currentIndex={current}
         showImage={showImage}

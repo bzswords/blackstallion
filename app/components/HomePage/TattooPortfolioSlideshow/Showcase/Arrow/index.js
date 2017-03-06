@@ -1,22 +1,15 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
-  position: relative;
-  min-width: 2em;
-
-  img {
-    position: absolute;
-    top: 50%;
-    width: 80%;
-    margin: 0 0.2em;
-  } 
-`;
+import Wrapper from './Wrapper';
+import Background from './Background';
+import Label from './Label';
 
 class Arrow extends React.PureComponent {
 
   constructor(props) {
     super(props);
+    this.desktopBackground = props.desktopBackground;
     this.activateImage = this.activateImage.bind(this);
   }
 
@@ -26,17 +19,24 @@ class Arrow extends React.PureComponent {
   }
 
   render() {
-    return (
-      <Wrapper onClick={this.activateImage}>
-        <img src={this.props.image} alt="Placeholder" />
+    const label = this.props.stepValue == 1 ? 'Next' : 'Previous';
+    return(
+      <Wrapper
+        onClick={this.activateImage}
+      >
+        <Background desktopBackground={this.desktopBackground} />
+        <Label
+          altText="Placeholder"
+          text={label}
+          stepValue={this.props.stepValue}
+        />
       </Wrapper>
     );
   }
-
 }
 
 Arrow.propTypes = {
-  image: PropTypes.string.isRequired,
+  desktopBackground: PropTypes.string,
   currentIndex: PropTypes.number.isRequired,
   stepValue: PropTypes.number.isRequired,
   showImage: PropTypes.func.isRequired,

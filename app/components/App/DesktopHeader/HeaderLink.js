@@ -14,14 +14,14 @@ const A = styled(NormalA)`
   }
 
   @media (min-width: 1050px) {
-    font-size: 1em;
+    font-size: 0.9em;
   } 
 `;
 
-function HeaderLink({ link, text }) {
+function HeaderLink({ link, text, target }) {
   const isActive = window.location.pathname === link;
   return (
-    <A href={link} isActive={isActive}>
+    <A href={link} isActive={isActive} target={target}>
       {text}
     </A>
   );
@@ -30,6 +30,13 @@ function HeaderLink({ link, text }) {
 HeaderLink.PropTypes = {
   link: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  target: PropTypes.string.isRequired,
+};
+
+HeaderLink.defaultProps = {
+  link: '/',
+  text: 'Placeholder',
+  target: '_self',
 };
 
 export default HeaderLink;

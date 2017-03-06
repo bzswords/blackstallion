@@ -10,7 +10,8 @@ import Page from 'components/shared/Page';
 import PageHeader from 'components/shared/PageHeader';
 import Schedule from 'components/Travel/Schedule';
 
-import BackgroundImage from './images/mobile-travel-header-img.jpg';
+import MobileBackground from './images/mobile-travel-header-img.jpg';
+import DesktopBackground from './images/travel-header-img.jpg';
 
 const entries = [
   {
@@ -29,7 +30,12 @@ export default class Travel extends React.PureComponent { // eslint-disable-line
   render() {
     return (
       <Page>
-        <PageHeader title="Travel" backgroundImage={BackgroundImage} />
+        <PageHeader 
+          title="Travel"
+          mobileBackground={MobileBackground}
+          desktopBackground={DesktopBackground}
+          altText="Coming to a tattoo convention or shop near you soon"
+        />
         <Schedule entries={entries} />
       </Page>
     );
