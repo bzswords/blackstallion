@@ -28,9 +28,9 @@ const Wrapper = styled.div`
 
 `;
 
-function Label({ text, altText, image, stepValue }) {
-  if (stepValue == 1) {
-    return(
+function Label({ text, stepValue }) {
+  if (stepValue === 1) {
+    return (
       <Wrapper>
         <span>{text}</span>
         <ArrowImage direction="right" />
@@ -47,9 +47,7 @@ function Label({ text, altText, image, stepValue }) {
 
 Label.propTypes = {
   text: PropTypes.string,
-  altText: PropTypes.string,
-  image: PropTypes.string,
   stepValue: PropTypes.number,
-}
+};
 
 export default Label;

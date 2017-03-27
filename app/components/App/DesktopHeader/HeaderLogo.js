@@ -18,16 +18,21 @@ const A = styled(NormalA)`
 
 `;
 
-function HeaderLogo({ link }) {
+const propTypes = {
+  link: PropTypes.string.isRequired,
+};
+
+function HeaderLogo(props) {
   return (
-    <A href={link}>
+    <A href={props.link}>
       <img src={Logo} alt="Black Stallion Tattoo" />
     </A>
   );
 }
 
-HeaderLogo.PropTypes = {
-  link: PropTypes.string.isRequired,
+HeaderLogo.propTypes = propTypes;
+HeaderLogo.defaultProps = {
+  link: '',
 };
 
 export default HeaderLogo;

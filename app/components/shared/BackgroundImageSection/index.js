@@ -1,18 +1,19 @@
 import React, { PropTypes } from 'react';
-import styled, { css } from 'styled-components';
 
 import Wrapper from './Wrapper';
 
-const props = {
+const propTypes = {
+  children: PropTypes.node,
   mobileBackground: PropTypes.string.isRequired,
   desktopBackground: PropTypes.string.isRequired,
-  backgroundSize: PropTypes.string,
   altText: PropTypes.string,
-}
+};
 
 function BackgroundImageSection(props) {
   return (
-    <Wrapper {...props}>
+    <Wrapper
+      desktopBackground={props.desktopBackground}
+    >
       <picture>
         <source media="(max-width: 767px)" srcSet={props.mobileBackground} />
         <img src={props.desktopBackground} alt={props.altText} />
@@ -22,6 +23,6 @@ function BackgroundImageSection(props) {
   );
 }
 
-BackgroundImageSection.propTypes = props;
+BackgroundImageSection.propTypes = propTypes;
 
 export default BackgroundImageSection;

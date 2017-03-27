@@ -18,20 +18,22 @@ const A = styled(NormalA)`
   } 
 `;
 
-function HeaderLink({ link, text, target }) {
-  const isActive = window.location.pathname === link;
-  return (
-    <A href={link} isActive={isActive} target={target}>
-      {text}
-    </A>
-  );
-}
-
-HeaderLink.PropTypes = {
+const propTypes = {
   link: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   target: PropTypes.string.isRequired,
 };
+
+function HeaderLink(props) {
+  const isActive = window.location.pathname === props.link;
+  return (
+    <A href={props.link} isActive={isActive} target={props.target}>
+      {props.text}
+    </A>
+  );
+}
+
+HeaderLink.propTypes = propTypes;
 
 HeaderLink.defaultProps = {
   link: '/',

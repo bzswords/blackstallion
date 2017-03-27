@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 
 import StrikethroughHeading from 'components/shared/StrikethroughHeading';
-import PageSection from 'components/shared/PageSection';
 import PageSectionHeader from 'components/shared/PageSectionHeader';
 
 import Form from './Form';

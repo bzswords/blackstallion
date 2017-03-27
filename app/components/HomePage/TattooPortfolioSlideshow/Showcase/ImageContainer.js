@@ -15,18 +15,21 @@ const Wrapper = styled.div`
   }
 `;
 
-const props = {
+const propTypes = {
   image: PropTypes.string.isRequired,
-}
+};
 
 function ImageContainer(props) {
   return (
     <Wrapper>
-      <img src={props.image} />
+      <img
+        alt="Black Stallion Tattoo"
+        src={props.image}
+      />
     </Wrapper>
   );
 }
 
-ImageContainer.propTypes = props;
+ImageContainer.propTypes = propTypes;
 
 export default ImageContainer;

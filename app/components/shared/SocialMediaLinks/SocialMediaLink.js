@@ -23,7 +23,7 @@ class SocialMediaLink extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <A href={this.href} target="_blank" >
         {this.props.children}
       </A>
@@ -32,6 +32,7 @@ class SocialMediaLink extends React.Component {
 }
 
 SocialMediaLink.propTypes = {
+  children: React.PropTypes.node,
   href: PropTypes.string,
 };
 

@@ -3,9 +3,13 @@ import React, { PropTypes } from 'react';
 import SocialMediaLinks from 'components/shared/SocialMediaLinks';
 import Wrapper from './Wrapper';
 
-function NavigationMenu({ show }) {
+const propTypes = {
+  show: PropTypes.bool.isRequired,
+};
+
+function NavigationMenu(props) {
   return (
-    <Wrapper show={show} >
+    <Wrapper show={props.show} >
       <ul>
         <li><a href="/" target="_self">Home</a></li>
         <li><a href="/booking" target="_self">Book An Appointment</a></li>
@@ -20,8 +24,6 @@ function NavigationMenu({ show }) {
   );
 }
 
-NavigationMenu.PropTypes = {
-  show: PropTypes.bool.isRequired,
-};
+NavigationMenu.propTypes = propTypes;
 
 export default NavigationMenu;

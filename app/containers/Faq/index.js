@@ -28,7 +28,7 @@ export default class Faq extends React.PureComponent { // eslint-disable-line re
   render() {
     return (
       <Page>
-        <PageHeader 
+        <PageHeader
           title="FAQ"
           mobileBackground={MobileBackground}
           desktopBackground={DesktopBackground}

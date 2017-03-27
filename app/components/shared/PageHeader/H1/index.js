@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import styled from 'styled-components';
 
 import NormalH1 from './../../H1';
 import Wrapper from './Wrapper';

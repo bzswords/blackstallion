@@ -31,6 +31,6 @@ function SocialMediaLinks() {
       </SocialMediaLink>
     </Wrapper>
   );
-} 
+}
 
 export default SocialMediaLinks;

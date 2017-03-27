@@ -1,7 +1,5 @@
 import React from 'react';
 
-import BackgroundImageSection from 'components/shared/BackgroundImageSection';
-
 import Img from './Img';
 import Logo from './Logo';
 import Foreground from './images/Desktop-Homepage-Foreground.png';

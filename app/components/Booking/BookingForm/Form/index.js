@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { Formio } from 'react-formio';
 
 import Wrapper from './Wrapper';
@@ -10,25 +10,20 @@ export default class Form extends React.PureComponent {
     this.onSubmit = this.onSubmit.bind(this);
     this.onLoad = this.onLoad.bind(this);
     this.state = {
-      submitted: false
-    }
+      submitted: false,
+    };
   }
 
   onSubmit() {
-    console.log('onFormSubmit');
     this.setState({
-      submitted : true
+      submitted: true,
     });
-  }
-
-  onLoad() {
-    console.log('onFormLoad');
   }
 
   render() {
     const body = ((submitted) => {
       if (submitted) {
-        return(
+        return (
           <div className="submitted">
             <span>
               Thank you.
@@ -42,15 +37,14 @@ export default class Form extends React.PureComponent {
         <Formio
           src="https://ldxupcvefsrdkvs.form.io/booking"
           onFormSubmit={this.onSubmit}
-          onFormLoad={this.onLoad}
         />
       );
     })(this.state.submitted);
-    return(
+    return (
       <Wrapper>
         {body}
       </Wrapper>
     );
   }
 
-} 
+}

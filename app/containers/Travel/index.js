@@ -30,7 +30,7 @@ export default class Travel extends React.PureComponent { // eslint-disable-line
   render() {
     return (
       <Page>
-        <PageHeader 
+        <PageHeader
           title="Travel"
           mobileBackground={MobileBackground}
           desktopBackground={DesktopBackground}

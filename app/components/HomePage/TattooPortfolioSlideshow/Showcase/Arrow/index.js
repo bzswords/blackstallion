@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import styled from 'styled-components';
 
 import Wrapper from './Wrapper';
 import Background from './Background';
@@ -11,13 +10,13 @@ class Arrow extends React.PureComponent {
     super(props);
     this.activateImage = this.activateImage.bind(this);
     this.state = {
-      desktopBackground : props.desktopBackground
-    }
+      desktopBackground: props.desktopBackground,
+    };
   }
 
   componentWillReceiveProps(nextProps) {
     this.setState({
-      desktopBackground : nextProps.desktopBackground
+      desktopBackground: nextProps.desktopBackground,
     });
   }
 
@@ -27,8 +26,8 @@ class Arrow extends React.PureComponent {
   }
 
   render() {
-    const label = this.props.stepValue == 1 ? 'Next' : 'Previous';
-    return(
+    const label = this.props.stepValue === 1 ? 'Next' : 'Previous';
+    return (
       <Wrapper
         onClick={this.activateImage}
       >

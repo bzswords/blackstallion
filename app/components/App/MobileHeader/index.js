@@ -1,33 +1,20 @@
 import React, { PropTypes } from 'react';
-import styled from 'styled-components';
 
 import Logo from 'assets/images/Logo-01.svg';
 
 import A from './A';
+import Wrapper from './Wrapper';
 
-const Wrapper = styled.header`
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 4.875em;
-  padding: 0.5em 0 0.2em 0;
-  background-color: #000;
-  z-index: 101;
-  border-bottom: ${(props) => props.menuOpen ? '1px solid white' : 'none'};
+const propTypes = {
+  toggleMenu: PropTypes.func.isRequired,
+  menuOpen: PropTypes.bool.isRequired,
+};
 
-  @media (min-width: 769px) {
-    display: none;
-    visibility: hidden;
-  }
-`;
-
-function MobileHeader({ toggleMenu, menuOpen }) {
-  const text = menuOpen ? 'Close' : 'Menu';
+function MobileHeader(props) {
+  const text = props.menuOpen ? 'Close' : 'Menu';
   return (
-    <Wrapper menuOpen={menuOpen}>
-      <A href="#" onClick={toggleMenu}>
+    <Wrapper menuOpen={props.menuOpen}>
+      <A onClick={props.toggleMenu}>
         <img src={Logo} alt="Black Stallion Tattoo" height="50" />
         <br />
         {text}
@@ -36,9 +23,6 @@ function MobileHeader({ toggleMenu, menuOpen }) {
   );
 }
 
-MobileHeader.PropTypes = {
-  toggleMenu: PropTypes.func.isRequired,
-  menuOpen: PropTypes.bool.isRequired,
-};
+MobileHeader.propTypes = propTypes;
 
 export default MobileHeader;

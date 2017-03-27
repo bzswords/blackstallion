@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -16,6 +15,10 @@ const Wrapper = styled.div`
   }
 `;
 
+const propTypes = {
+  children: React.PropTypes.node,
+};
+
 export class OpaqueLayer extends React.Component {
 
   constructor(props) {
@@ -31,16 +34,20 @@ export class OpaqueLayer extends React.Component {
   }
 
   fadeIn() {
-    ReactDOM.findDOMNode(this).style.setProperty('background-color', 'rgba(0, 0, 0, 0.4)');
+    this.node.style.setProperty('background-color', 'rgba(0, 0, 0, 0.4)');
   }
 
   render() {
     return (
-      <Wrapper>
+      <Wrapper
+        ref={(node) => (this.node = node)}
+      >
         {this.children}
       </Wrapper>
     );
   }
-} 
+}
+
+OpaqueLayer.propTypes = propTypes;
 
 export default OpaqueLayer;
