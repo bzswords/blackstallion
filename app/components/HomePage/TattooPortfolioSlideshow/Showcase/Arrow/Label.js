@@ -17,8 +17,13 @@ const Wrapper = styled.div`
     left: -50%;
   }
   span {
+    display: none;
     font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+
+    @media (min-width: 769px) {
+      display: inline-block;
+    }
   }
 
 `;

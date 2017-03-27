@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 
 import StrikethroughHeading from 'components/shared/StrikethroughHeading';
@@ -22,15 +22,23 @@ const Wrapper = styled.div`
   }
 `;
 
-function BookingForm() {
+function BookingForm({ onSubmitForm }) {
   return (
     <Wrapper>
       <PageSectionHeader>
-        <StrikethroughHeading text="Book An Appointment"></StrikethroughHeading>
+        <StrikethroughHeading
+          text="Book An Appointment"
+        />
       </PageSectionHeader>
-      <Form />
+      <Form
+        onSubmitForm={onSubmitForm}
+      />
     </Wrapper>
   );
 }
+
+BookingForm.propTypes = {
+  onSubmitForm: PropTypes.func,
+};
 
 export default BookingForm;

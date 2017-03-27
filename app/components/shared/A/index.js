@@ -7,6 +7,8 @@ const A = styled.a`
   text-transform: uppercase;
   text-align: center;
   margin: auto;
+  transition: .2s;
+  -webkit-transition: .2s;
 
   &:hover {
     color: #c3b158;

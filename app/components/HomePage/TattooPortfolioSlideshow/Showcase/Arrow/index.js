@@ -9,8 +9,16 @@ class Arrow extends React.PureComponent {
 
   constructor(props) {
     super(props);
-    this.desktopBackground = props.desktopBackground;
     this.activateImage = this.activateImage.bind(this);
+    this.state = {
+      desktopBackground : props.desktopBackground
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      desktopBackground : nextProps.desktopBackground
+    });
   }
 
   activateImage() {
@@ -24,7 +32,7 @@ class Arrow extends React.PureComponent {
       <Wrapper
         onClick={this.activateImage}
       >
-        <Background desktopBackground={this.desktopBackground} />
+        <Background desktopBackground={this.state.desktopBackground} />
         <Label
           altText="Placeholder"
           text={label}

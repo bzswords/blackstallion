@@ -8,6 +8,11 @@ const A = styled.a`
       fill: white;
     }
   }
+
+  svg > path {
+    transition: .2s;
+    -webkit-transition: .2s;
+  }
 `;
 
 class SocialMediaLink extends React.Component {

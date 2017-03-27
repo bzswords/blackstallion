@@ -1,10 +1,10 @@
 {
-  "name": "react-boilerplate",
-  "version": "3.4.0",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+  "name": "blackstallion",
+  "version": "1.0.0",
+  "description": "Website for Black Stallion Tattoo",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "git://github.com/bzswords/blackstallion.git"
   },
   "engines": {
     "npm": ">=3",
@@ -225,6 +225,7 @@
     "minimist": "1.2.0",
     "react": "15.4.1",
     "react-dom": "15.4.1",
+    "react-formio": "^1.2.1",
     "react-helmet": "3.2.2",
     "react-intl": "2.1.5",
     "react-redux": "4.4.6",

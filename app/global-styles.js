@@ -34,7 +34,8 @@ injectGlobal`
     font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
-  input[type=submit] {
+  input[type=submit],
+  button {
     font-family: 'Abril Fatface', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 

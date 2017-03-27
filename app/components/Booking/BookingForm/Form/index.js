@@ -1,35 +1,56 @@
-import React from 'react';
-import Grid from 'grid-styled';
+import React, { PropTypes } from 'react';
+import { Formio } from 'react-formio';
 
 import Wrapper from './Wrapper';
 
-function Form() {
-  return (
-    <Wrapper>
-      <Grid sm={1 / 2}>
-        <input type="text" name="first_name" placeholder="First Name*" />
-      </Grid>
-      <Grid sm={1 / 2}>
-        <input type="text" name="last_name" placeholder="Last Name*" />
-      </Grid>
-      <Grid sm={1 / 1}>
-        <input type="text" name="email" placeholder="Email Address*" />
-      </Grid>
-      <Grid sm={1/ 1}>
-        <input type="text" name="phone" placeholder="Phone Number*" />
-      </Grid>
-      <Grid sm={1 / 1}>
-        <textarea name="description" placeholder="Tattoo Idea/Location/Size*" />
-      </Grid>
-      <Grid sm={1 / 2}>
-        <input type="text" name="availability" placeholder="Available Dates*" />
-      </Grid>
-      <Grid sm={1 / 2}>
-        <input type="text" name="budget" placeholder="Budget" />
-      </Grid>
-      <input type="submit" name="submit" value="Submit" />
-    </Wrapper>
-  );
-}
+export default class Form extends React.PureComponent {
 
-export default Form;
+  constructor() {
+    super();
+    this.onSubmit = this.onSubmit.bind(this);
+    this.onLoad = this.onLoad.bind(this);
+    this.state = {
+      submitted: false
+    }
+  }
+
+  onSubmit() {
+    console.log('onFormSubmit');
+    this.setState({
+      submitted : true
+    });
+  }
+
+  onLoad() {
+    console.log('onFormLoad');
+  }
+
+  render() {
+    const body = ((submitted) => {
+      if (submitted) {
+        return(
+          <div className="submitted">
+            <span>
+              Thank you.
+            </span>
+            <br />
+            We will be reaching out to you in the next few days to discuss your request.
+          </div>
+        );
+      }
+      return (
+        <Formio
+          src="https://ldxupcvefsrdkvs.form.io/booking"
+          onFormSubmit={this.onSubmit}
+          onFormLoad={this.onLoad}
+        />
+      );
+    })(this.state.submitted);
+    return(
+      <Wrapper>
+        {body}
+      </Wrapper>
+    );
+  }
+
+} 

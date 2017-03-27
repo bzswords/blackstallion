@@ -8,6 +8,14 @@ const Wrapper = styled.ul`
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  border: 1px solid white;
+  border-top: 0;
+  border-bottom: 0;
+
+  @media (min-width: 768px) {
+    border-top: 1px solid white;
+    border-left: 0;
+  }
 
   img {
     width: 20%;
