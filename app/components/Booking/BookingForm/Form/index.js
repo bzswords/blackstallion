@@ -8,7 +8,6 @@ export default class Form extends React.PureComponent {
   constructor() {
     super();
     this.onSubmit = this.onSubmit.bind(this);
-    this.onLoad = this.onLoad.bind(this);
     this.state = {
       submitted: false,
     };
