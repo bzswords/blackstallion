@@ -12,6 +12,7 @@ const chunk = css`
 
   @media (min-width: 768px) {
     width: 33.3%;
+    height: 5em;
   }
 
   div {

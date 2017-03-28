@@ -24,6 +24,9 @@ export class OpaqueLayer extends React.Component {
   constructor(props) {
     super(props);
     this.children = props.children;
+    this.state = {
+      hasFadedIn: false
+    }
   }
 
   componentDidMount() {
@@ -34,13 +37,15 @@ export class OpaqueLayer extends React.Component {
   }
 
   fadeIn() {
-    this.node.style.setProperty('background-color', 'rgba(0, 0, 0, 0.4)');
+    if (!this.state.hasFadedIn) {
+      this.node.style.setProperty('background-color', 'rgba(0, 0, 0, 0.4)');
+    }
   }
 
   render() {
     return (
       <Wrapper
-        ref={(node) => (this.node = node)}
+        innerRef={(node) => (this.node = node)}
       >
         {this.children}
       </Wrapper>
