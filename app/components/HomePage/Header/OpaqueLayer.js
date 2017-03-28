@@ -25,8 +25,8 @@ export class OpaqueLayer extends React.Component {
     super(props);
     this.children = props.children;
     this.state = {
-      hasFadedIn: false
-    }
+      hasFadedIn: false,
+    };
   }
 
   componentDidMount() {
