@@ -30,13 +30,14 @@ class Arrow extends React.PureComponent {
     return (
       <Wrapper
         onClick={this.activateImage}
+        desktopBackground={this.state.desktopBackground}
       >
-        <Background desktopBackground={this.state.desktopBackground} />
         <Label
           altText="Placeholder"
           text={label}
           stepValue={this.props.stepValue}
         />
+        <Background desktopBackground={this.state.desktopBackground} />
       </Wrapper>
     );
   }

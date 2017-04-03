@@ -12,8 +12,15 @@ import Showcase from './Showcase';
 import ImageSelector from './ImageSelector';
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   max-width: 60em;
   margin: auto;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+  }
 
   > div {
     padding: 0;
@@ -47,20 +54,16 @@ class TattooPortfolioSlideshow extends React.Component {
   render() {
     return (
       <Wrapper>
-        <Grid sm={2 / 3}>
-          <Showcase
-            showImage={this.showImage}
-            image={this.props.images[this.state.current]}
-            current={this.state.current}
-          />
-        </Grid>
-        <Grid sm={1 / 3}>
-          <ImageSelector
-            showImage={this.showImage}
-            images={this.props.images}
-            current={this.state.current}
-          />
-        </Grid>
+        <Showcase
+          showImage={this.showImage}
+          image={this.props.images[this.state.current]}
+          current={this.state.current}
+        />
+        <ImageSelector
+          showImage={this.showImage}
+          images={this.props.images}
+          current={this.state.current}
+        />
       </Wrapper>
     );
   }

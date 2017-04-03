@@ -7,6 +7,11 @@ import ImageContainer from './ImageContainer';
 const Wrapper = styled.div`
   display: flex;
   border: 0.2em solid white;
+  width: 100%;
+
+  @media (min-width: 769px) {
+    width: 70%;
+  }
 
   > span img {
     width: 100%;

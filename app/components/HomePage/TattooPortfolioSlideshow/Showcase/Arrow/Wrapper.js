@@ -5,6 +5,7 @@ const chunk = css`
   min-width: 2em;
   color: white;
   white-space: nowrap;
+  background: none;
 
   &:hover {
     cursor: pointer;
@@ -20,6 +21,11 @@ const chunk = css`
     img {
       width: 1.5em;
     }
+  }
+
+  svg > path {
+    transition: .2s;
+    -webkit-transition: .2s;
   }
 `;
 

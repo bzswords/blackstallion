@@ -12,9 +12,13 @@ const Wrapper = styled.ul`
   border-top: 0;
   border-bottom: 0;
 
-  @media (min-width: 768px) {
+
+  @media (min-width: 769px) {
     border-top: 1px solid white;
     border-left: 0;
+    border-right: 0;
+    height: inherit;
+    width: 30%;
   }
 
   img {

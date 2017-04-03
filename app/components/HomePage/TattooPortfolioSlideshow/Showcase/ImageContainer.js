@@ -10,8 +10,8 @@ const Wrapper = styled.div`
     width: 100%;
   }
 
-  @media (min-width: 767px) {
-    flex: 0 0 24em;
+  @media (min-width: 769px) {
+    flex: 1 0 24em;
   }
 `;
 

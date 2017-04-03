@@ -10,15 +10,25 @@ const chunk = css`
   border-left: 0;
   border-top: 0;
 
-  @media (min-width: 768px) {
+  &:hover {
+    cursor: pointer;
+
+    div {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: 769px) {
     width: 33.3%;
-    height: 5em;
+    height: 20%;
   }
 
   div {
     width: 100%;
     height: 100%;
     background-color: #c3b158;
+    transition: .2s;
+    -webkit-transition: .2s;
     opacity: ${(props) => props.selected ? '0.3' : '0'};
   }
 `;

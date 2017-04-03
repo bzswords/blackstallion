@@ -8,6 +8,9 @@ const Wrapper = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 100;
+  transition: .2s;
+  -webkit-transition: .2s;
 
   svg {
     width: 1.5em;
