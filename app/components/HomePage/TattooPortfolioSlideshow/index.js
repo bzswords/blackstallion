@@ -5,7 +5,6 @@
 */
 
 import React, { PropTypes } from 'react';
-import Grid from 'grid-styled';
 import styled from 'styled-components';
 
 import Showcase from './Showcase';

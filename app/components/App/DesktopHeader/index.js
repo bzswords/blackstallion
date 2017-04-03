@@ -31,7 +31,7 @@ function DesktopHeader() {
       <Wrapper>
         <HeaderLink link="/booking" text="Book An Appointment" />
         <HeaderLink link="/travel" text="Travel" />
-        <HeaderLink link="/" text="Webstore" />
+        <HeaderLink link="https://www.shopify.com" text="Webstore" target="_blank" />
         <HeaderLogo link="/" />
         <HeaderLink link="https://www.tattooflashcollective.com/" text="Tattoo Flash Collective" target="_blank" />
         <HeaderLink link="/faq" text="FAQ" />
