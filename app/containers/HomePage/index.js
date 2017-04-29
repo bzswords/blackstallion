@@ -19,21 +19,21 @@ import FeaturedProducts from 'components/HomePage/FeaturedProducts';
 
 function HomePage() {
   const images = [
-    { path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg' },
-    { path: 'https://s-media-cache-ak0.pinimg.com/736x/91/59/08/915908a0c53bcc46efdea0e94a18bf35.jpg' },
-    { path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg' },
-    { path: 'https://s-media-cache-ak0.pinimg.com/736x/91/59/08/915908a0c53bcc46efdea0e94a18bf35.jpg' },
-    { path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg' },
-    { path: 'https://s-media-cache-ak0.pinimg.com/736x/91/59/08/915908a0c53bcc46efdea0e94a18bf35.jpg' },
-    { path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg' },
-    { path: 'https://s-media-cache-ak0.pinimg.com/736x/91/59/08/915908a0c53bcc46efdea0e94a18bf35.jpg' },
-    { path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg' },
-    { path: 'https://s-media-cache-ak0.pinimg.com/736x/91/59/08/915908a0c53bcc46efdea0e94a18bf35.jpg' },
-    { path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg' },
-    { path: 'https://s-media-cache-ak0.pinimg.com/736x/91/59/08/915908a0c53bcc46efdea0e94a18bf35.jpg' },
-    { path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg' },
-    { path: 'https://s-media-cache-ak0.pinimg.com/736x/91/59/08/915908a0c53bcc46efdea0e94a18bf35.jpg' },
-    { path: 'http://tattoo-journal.com/wp-content/uploads/2015/08/armband-tattoo-2.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/1.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/2.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/3.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/4.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/5.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/6.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/7.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/8.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/9.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/10.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/11.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/12.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/13.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/14.jpg' },
+    { path: 'https://s3.amazonaws.com/tattoo-images/15.jpg' },
   ];
   return (
     <Page>

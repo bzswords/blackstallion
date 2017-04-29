@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 const chunk = css`
-  background: url(${(props) => props.image.path}) no-repeat;
+  background: url(${(props) => props.image.path}) no-repeat center;
   width: 20%;
   height: 4em;
   background-size: 150%;

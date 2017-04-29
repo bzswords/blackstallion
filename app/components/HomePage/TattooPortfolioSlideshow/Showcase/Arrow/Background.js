@@ -7,11 +7,6 @@ const chunk = css`
 
   @media (min-width: 769px) {
     background: url(${(props) => props.desktopBackground}) no-repeat center;
-    -webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px);
-    filter: blur(4px);
   }
 `;
 

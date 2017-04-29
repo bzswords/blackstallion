@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 
 import Wrapper from './Wrapper';
 import Background from './Background';
+import OpaqueBackground from './OpaqueBackground';
 import Label from './Label';
 
 class Arrow extends React.PureComponent {
@@ -37,6 +38,7 @@ class Arrow extends React.PureComponent {
           text={label}
           stepValue={this.props.stepValue}
         />
+        <OpaqueBackground />
         <Background desktopBackground={this.state.desktopBackground} />
       </Wrapper>
     );
