@@ -8,7 +8,7 @@ import FeaturedProductGrid from './FeaturedProductGrid';
 
 function FeaturedProducts() {
   return (
-    <PageSection background="#1b1b1b">
+    <PageSection background="#000">
       <PageSectionHeader>
         <StrikethroughHeading text="Featured Products"></StrikethroughHeading>
       </PageSectionHeader>

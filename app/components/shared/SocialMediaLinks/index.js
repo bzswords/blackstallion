@@ -17,16 +17,16 @@ import Instagram from './icons/Instagram';
 function SocialMediaLinks() {
   return (
     <Wrapper>
-      <SocialMediaLink href="tumblr.com">
+      <SocialMediaLink href="http://blackstalliontattoo.tumblr.com/">
         <Tumblr />
       </SocialMediaLink>
-      <SocialMediaLink href="facebook.com">
+      <SocialMediaLink href="https://www.facebook.com/BlackStallionTattooing/">
         <Facebook />
       </SocialMediaLink>
-      <SocialMediaLink href="twitter.com">
+      <SocialMediaLink href="https://twitter.com/bstattooing">
         <Twitter />
       </SocialMediaLink>
-      <SocialMediaLink href="instagram.com">
+      <SocialMediaLink href="https://www.instagram.com/blackstalliontattoo/">
         <Instagram />
       </SocialMediaLink>
     </Wrapper>
