@@ -1,0 +1,37 @@
+@require '../lib/vars.styl'
+@require '../lib/fonts.styl'
+
+*
+  box-sizing border-box
+
+body
+  background black
+  font-family helvetica
+  color darken(white, 10%)
+  font-size 16px
+  line-height 1.5
+
+body.fontLoaded
+  font-family abril-fatface
+
+p, label
+  font-family work-sans
+  color white
+  margin 0
+
+input[type=text]
+  font-family work-sans
+
+input[type=submit], button
+  font-family abril-fatface
+
+h1, h2, h3
+  position relative
+  font-family abril-fatface
+  text-align center
+  text-transform uppercase
+  margin 0
+  color white
+  z-index 1
+  white-space nowrap
+
