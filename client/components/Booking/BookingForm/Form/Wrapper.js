@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  width: 40em;
-  max-width: 100%;
+  max-width: 40em;
   margin: auto;
   text-align: center;
 

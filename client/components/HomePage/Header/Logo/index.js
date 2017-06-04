@@ -9,14 +9,12 @@ const Wrapper = styled.div`
   position: absolute;
   left: 50%;
   bottom: 2em;
-
-  @media (min-width: 769px) {
-    left: 50%;
-  }
+  width: 18em;
 
   @media (min-width: 1050px) {
     left: 58%;
     bottom: 5em;
+    width: 25em;
   }
 
 `;

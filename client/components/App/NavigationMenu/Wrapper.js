@@ -15,10 +15,11 @@ const Wrapper = styled.nav`
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    height: 100%;
+    height: 28%;
     max-width: 13em;
     padding: 0;
     margin: auto;
+    list-style: none;
 
     li {
       a {
